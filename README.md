@@ -31,7 +31,7 @@ The framework addresses four tightly coupled challenges in autonomous inspection
 ## Unified Inspection Pipeline
 
 <p align="center">
-  <img src="./figs/inspection.png" width="88%" alt="OP-CBRS training and inspection pipeline"/>
+  <img src="./figs/inspection.png" width="82%" height="300" alt="OP-CBRS training and inspection pipeline"/>
 </p>
 
 <p align="justify">
@@ -176,11 +176,11 @@ The inspection area is a cylindrical surface segment. The UAV maintains a fixed 
 ## Visual Overview of the Task
 
 <p align="center">
-  <img src="./figs/exp0-a.png" width="30%" height="230" alt="Simulated urban infrastructure scene"/>
+  <img src="./figs/exp0-a.png" width="31%" height="230" alt="Simulated urban infrastructure scene"/>
   &nbsp;
-  <img src="./figs/exp0-b.png" width="30%" height="230" alt="Inspection target area and field of view"/>
+  <img src="./figs/exp0-b.png" width="31%" height="230" alt="Inspection target area and field of view"/>
   &nbsp;
-  <img src="./figs/exp0-c.png" width="30%" height="230" alt="Coverage flight path reconstruction"/>
+  <img src="./figs/exp0-c.png" width="31%" height="230" alt="Coverage flight path reconstruction"/>
 </p>
 
 <p align="justify">

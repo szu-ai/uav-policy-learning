@@ -176,11 +176,11 @@ The inspection area is a cylindrical surface segment. The UAV maintains a fixed 
 ## Visual Overview of the Task
 
 <p align="center">
-  <img src="./figs/exp0-a.png" width="31%" alt="Simulated urban infrastructure scene"/>
+  <img src="./figs/exp0-a.png" width="30%" height="230" alt="Simulated urban infrastructure scene"/>
   &nbsp;
-  <img src="./figs/exp0-b.png" width="31%" alt="Inspection target area and field of view"/>
+  <img src="./figs/exp0-b.png" width="30%" height="230" alt="Inspection target area and field of view"/>
   &nbsp;
-  <img src="./figs/exp0-c.png" width="31%" alt="Coverage flight path reconstruction"/>
+  <img src="./figs/exp0-c.png" width="30%" height="230" alt="Coverage flight path reconstruction"/>
 </p>
 
 <p align="justify">
@@ -194,11 +194,13 @@ The inspection area is a cylindrical surface segment. The UAV maintains a fixed 
 ## Decision Behavior Under Feature Degradation
 
 <p align="center">
-  <img src="./figs/exp1-a.png" width="30%" alt="3D flight trajectory response"/>
+  <img src="./figs/exp1-a.png" width="38%" alt="3D flight trajectory response"/>
   &nbsp;
-  <img src="./figs/exp1-b.png" width="30%" alt="Action decision dynamics"/>
-  &nbsp;
-  <img src="./figs/exp1-c.png" width="34%" alt="Visual feature heat-map sequence"/>
+  <img src="./figs/exp1-b.png" width="38%" alt="Action decision dynamics"/>
+</p>
+
+<p align="center">
+  <img src="./figs/exp1-c.png" width="62%" alt="Visual feature heat-map sequence"/>
 </p>
 
 <p align="justify">

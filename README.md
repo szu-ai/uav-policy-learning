@@ -266,7 +266,7 @@ Key responsibilities of `TestEnv` include:
 
 ### 3. Inspection Path Initialization
 
-**Notebook section:** `# 初始化任务轨迹`
+**Notebook section:** `# Task Trajectory Initialization`
 
 This part defines the inspection geometry and route generation utilities:
 
@@ -283,7 +283,7 @@ These functions define the inspection sector, convert the sector into turning po
 
 ### 4. Path-Following and Alignment Utilities
 
-**Notebook section:** `# 巡检路径跟踪算法`
+**Notebook section:** `# Inspection Path-Following Algorithm`
 
 This block implements geometric helpers and tracking routines such as:
 
@@ -322,7 +322,7 @@ In practical terms:
 
 ### 6. Online Model Training
 
-**Notebook section:** `# 模型训练`
+**Notebook section:** `# Model Training`
 
 This stage performs online policy learning for the OSD model. A typical training cycle follows this pattern:
 
@@ -342,7 +342,7 @@ The training loop is tightly coupled with the simulator, so the notebook acts as
 
 ### 7. Offline Experience Collection
 
-**Notebook section:** `# 收集离线经验`
+**Notebook section:** `# Offline Experience Collection`
 
 OP-CBRS requires value-like potential functions learned from simpler tasks. This section collects offline data from <b>uniform-speed inspection policies</b>. Each fixed-speed policy generates trajectory experience that is later used to approximate potential functions for reward shaping.
 
@@ -353,8 +353,8 @@ This block is the bridge between the paper’s simpler proxy tasks and the main 
 ### 8. Offline Potential Function Training
 
 **Notebook sections:**  
-- `# 离线训练势函数 全链接`  
-- `# 离线训练势函数 卷积`
+- `# Offline Potential-Function Training - Fully Connected`  
+- `# Offline Potential-Function Training - Convolutional`
 
 These sections train the potential-function approximators used by OP-CBRS. The notebook includes both fully connected and convolutional variants, enabling experiments on different state encodings for value estimation.
 
@@ -364,7 +364,7 @@ This is where the repository implements the key idea that shaping rewards can be
 
 ### 9. Evaluation and Uniform-Speed Comparison
 
-**Notebook section:** `# 匀速测试 && 测试`
+**Notebook section:** `# Uniform-Speed Testing and Evaluation`
 
 This section runs the comparison experiments reported in the paper:
 
@@ -378,7 +378,7 @@ It produces the metrics used to compare success rate, average execution time, an
 
 ### 10. RPE Predictor and Auxiliary Analysis
 
-**Notebook section:** `# rpe预测器`
+**Notebook section:** `# RPE Predictor`
 
 This optional section includes additional data processing and regression-style modeling around RPE prediction from windowed task data. It is helpful for analysis and diagnostics, though it is not the central policy-learning block.
 
@@ -386,7 +386,7 @@ This optional section includes additional data processing and regression-style m
 
 ### 11. Presentation and Figure Generation
 
-**Notebook section:** `# presentation 画图`
+**Notebook section:** `# Presentation Figure Generation`
 
 The final plotting cells generate the visual results used in the paper and presentation materials, including policy response curves, feature heat maps, and potential-function analysis plots.
 
@@ -489,11 +489,11 @@ Execute the notebook sections in this sequence:
 3. Task trajectory initialization
 4. Path-following algorithm
 5. PPO Agent - Code Block
-6. 模型训练 (online OSD training)
-7. 收集离线经验 (uniform-speed offline data)
-8. 离线训练势函数 全链接 / 卷积 (phi-function training)
-9. 匀速测试 && 测试 (evaluation)
-10. rpe预测器 / presentation 画图 (analysis and visualization)
+6. Model Training (online OSD training)
+7. Offline Experience Collection (uniform-speed offline data)
+8. Offline Potential-Function Training - Fully Connected / Convolutional (phi-function training)
+9. Uniform-Speed Testing and Evaluation (evaluation)
+10. RPE Predictor / Presentation Figure Generation (analysis and visualization)
 ```
 
 ---
